@@ -34,18 +34,20 @@ export const Navbar = () => {
         <NavMenu open={open}>
           <NavMenuLeft>
             <Link href="/#uberuns">
-              <NavItem>Über Uns</NavItem>
+              <NavItem onClick={openMenu}>Über Uns</NavItem>
             </Link>
             <Link href="/#unsereleistungen">
-              <NavItem>Unsere Leistungen</NavItem>
+              <NavItem onClick={openMenu}>Unsere Leistungen</NavItem>
             </Link>
             <Link href="/#unsereprojekte">
-              <NavItem>Unsere Projekte</NavItem>
+              <NavItem onClick={openMenu}>Unsere Projekte</NavItem>
             </Link>
             <Link href="/#unserteam">
-              <NavItem>Unser Team</NavItem>
+              <NavItem onClick={openMenu}>Unser Team</NavItem>
             </Link>
-            <NavItem>Kontaktiere Uns</NavItem>
+            <Link href="/#kontakt">
+              <NavItem onClick={openMenu}>Kontaktiere Uns</NavItem>
+            </Link>
           </NavMenuLeft>
           <NavMenuRight>
             <NavRightItem>Impressum</NavRightItem>

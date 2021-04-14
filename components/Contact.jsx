@@ -15,7 +15,7 @@ export const Contact = (props) => {
   const data = props.props.fields;
 
   return (
-    <ContactContainer>
+    <ContactContainer id="kontakt">
       <ContactLeftDiv>
         <ContactTitle>{data.contactTitle}</ContactTitle>
         <ContactText>{data.contactText}</ContactText>

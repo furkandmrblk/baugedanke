@@ -175,7 +175,8 @@ export const NavHamburger = styled.span`
 
   border: 1px solid ${color.$black};
 
-  background-color: ${color.$black};
+  background-color: ${({ open }) =>
+    open ? `${color.$white}` : `${color.$white}`};
 
   &:first-child {
     margin-bottom: 0.7rem;
