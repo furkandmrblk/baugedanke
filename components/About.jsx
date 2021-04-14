@@ -9,7 +9,7 @@ import {
 } from './About.styled';
 
 export const About = (props) => {
-  const data = props.props[0].fields;
+  const data = props.props.fields;
 
   return (
     <AboutContainer id="uberuns">
