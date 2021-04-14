@@ -80,21 +80,29 @@ export const HeroImage = styled.div`
   @media (max-width: ${media.laptopS}) {
     height: 23.5rem;
     width: 35rem;
+    margin-top: 0.5rem;
   }
   @media (max-width: ${media.tablet}) {
     height: 18.6rem;
     width: 25rem;
+    margin-top: 1.2rem;
   }
   @media (max-width: ${media.between}) {
     height: 16rem;
     width: 20rem;
+    margin-top: 1.5rem;
   }
   @media (max-width: ${media.mobileL}) {
     height: 15rem;
     width: 18rem;
+    margin-top: 1.7rem;
+  }
+  @media (max-width: ${media.mobileM}) {
+    margin-top: 1.9rem;
   }
   @media (max-width: ${media.mobileS}) {
     height: 13.5rem;
     width: 15rem;
+    margin-top: 2rem;
   }
 `;

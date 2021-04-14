@@ -98,7 +98,7 @@ export const ServicesTextDiv = styled.div`
   @media (max-width: ${media.laptopM}) {
     margin-right: 5rem;
   }
-  @media (max-width: ${media.mobileS}) {
+  @media (max-width: ${media.between}) {
     margin-right: 0rem;
   }
 `;
@@ -132,6 +132,12 @@ export const ServicesText = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$sm3};
+  }
+  @media (max-width: ${media.between}) {
+    max-width: 20rem;
+  }
+  @media (max-width: ${media.mobileL}) {
+    max-width: 18rem;
   }
   @media (max-width: ${media.mobileM}) {
     font-size: ${typeface.$sm4};
