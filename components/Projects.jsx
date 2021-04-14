@@ -76,7 +76,7 @@ export const Projects = (props) => {
                   backgroundImage: `url('https:${project.fields.projectImage.fields.file.url}')`,
                 }}
               >
-                <Link href={'projekte/' + project.fields.slug}>
+                <Link href={'/projekte/' + project.fields.slug}>
                   <ProjectCTA>
                     <ProjectCTAText>Zum Projekt</ProjectCTAText>
                   </ProjectCTA>

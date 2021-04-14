@@ -18,7 +18,8 @@ import {
 } from './Project.styled';
 
 export const Project = (props) => {
-  const data = props.props[0].fields;
+  const data = props.props.fields;
+  console.log(data);
 
   return (
     <ProjectContainer>
