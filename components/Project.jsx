@@ -19,7 +19,6 @@ import {
 
 export const Project = (props) => {
   const data = props.props.fields;
-  console.log(data);
 
   return (
     <ProjectContainer>
