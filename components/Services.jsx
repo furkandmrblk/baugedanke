@@ -16,7 +16,7 @@ import {
 } from './Services.styled';
 
 export const Services = (props) => {
-  const data = props.props.fields;
+  const data = props.props[0].fields;
   return (
     <ServicesContainer id="unsereleistungen">
       <ServicesImage

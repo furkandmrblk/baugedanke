@@ -2,7 +2,7 @@ import React from 'react';
 import { HeroContainer, HeroImage, HeroTitle } from './Hero.styled';
 
 export const Hero = (props) => {
-  const data = props.props.fields;
+  const data = props.props[0].fields;
 
   return (
     <HeroContainer>

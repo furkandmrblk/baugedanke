@@ -43,7 +43,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: data.items[0],
+      posts: data.items,
       teams: data2.items,
       projects: data3.items,
     },

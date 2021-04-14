@@ -12,7 +12,7 @@ import {
 } from './Contact.styled';
 
 export const Contact = (props) => {
-  const data = props.props.fields;
+  const data = props.props[0].fields;
 
   return (
     <ContactContainer>
