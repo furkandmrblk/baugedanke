@@ -15,7 +15,6 @@ export const Footer = () => {
   return (
     <FooterContainer>
       <FooterColumn2>
-        <FooterLogo />
         <FooterName>Baugedanke Berlin</FooterName>
         <FooterSlogan>Gedacht. Geplant. Gebaut.</FooterSlogan>
       </FooterColumn2>

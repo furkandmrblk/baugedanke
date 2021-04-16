@@ -65,7 +65,7 @@ export const TeamTitle = styled.h1`
   @media (max-width: ${media.laptopS}) {
     width: 35rem;
   }
-  @media (max-width: ${media.laptopS}) {
+  @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$md3};
     width: 25rem;
   }
@@ -90,8 +90,8 @@ export const TeamCard = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  height: 21.9375rem;
-  width: 17.1875rem;
+  height: 24.9375rem;
+  width: 21.375rem;
 
   background-color: ${color.$darkgreen};
   color: ${color.$white};
@@ -99,9 +99,53 @@ export const TeamCard = styled.div`
   margin-right: 1.4375rem;
   margin-bottom: 1.4375rem;
 
+  &:nth-child(3) {
+    margin-right: 0rem;
+  }
+  &:nth-child(6) {
+    margin-right: 0rem;
+  }
+  &:nth-child(9) {
+    margin-right: 0rem;
+  }
+  &:nth-child(12) {
+    margin-right: 0rem;
+  }
+
+  @media (max-width: ${media.laptopL}) {
+    height: 19.9375rem;
+    width: 18.045rem;
+
+    margin-right: 1.3375rem;
+    margin-bottom: 1.3375rem;
+  }
   @media (max-width: ${media.laptopM}) {
     height: 19.9375rem;
-    width: 15.1875rem;
+    width: 15.711rem;
+  }
+  @media (max-width: ${media.laptopS}) {
+    height: 20.9375rem;
+    width: 16.711rem;
+
+    &:nth-child(3) {
+      margin-right: 1.3375rem;
+    }
+    &:nth-child(9) {
+      margin-right: 1.3375rem;
+    }
+
+    &:nth-child(2) {
+      margin-right: 0rem;
+    }
+    &:nth-child(4) {
+      margin-right: 0rem;
+    }
+    &:nth-child(6) {
+      margin-right: 0rem;
+    }
+    &:nth-child(8) {
+      margin-right: 0rem;
+    }
   }
   @media (max-width: ${media.tablet}) {
     height: 14.9375rem;
@@ -113,6 +157,13 @@ export const TeamCard = styled.div`
 
     margin-right: 0.7375rem;
     margin-bottom: 0.7375rem;
+
+    &:nth-child(3) {
+      margin-right: 0.7375rem;
+    }
+    &:nth-child(9) {
+      margin-right: 0.7375rem;
+    }
   }
   @media (max-width: ${media.mobileL}) {
     height: 12.9375rem;
@@ -124,6 +175,13 @@ export const TeamCard = styled.div`
 
     margin-right: 0.2375rem;
     margin-bottom: 0.1775rem;
+
+    &:nth-child(3) {
+      margin-right: 0.2375rem;
+    }
+    &:nth-child(9) {
+      margin-right: 0.2375rem;
+    }
   }
 `;
 
@@ -184,13 +242,17 @@ export const TeamCardImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
-  height: 11.5rem;
+  height: 13.5rem;
   width: 12.125rem;
 
   margin-bottom: 1rem;
 
-  @media (max-width: ${media.laptopM}) {
-    height: 9.5rem;
+  @media (max-width: ${media.laptopL}) {
+    height: 10.5rem;
+    width: 10.125rem;
+  }
+  @media (max-width: ${media.laptopS}) {
+    height: 11.5rem;
     width: 10.125rem;
   }
   @media (max-width: ${media.tablet}) {

@@ -65,7 +65,7 @@ export const ProjectsTitle = styled.h1`
   @media (max-width: ${media.laptopS}) {
     width: 35rem;
   }
-  @media (max-width: ${media.laptopS}) {
+  @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$md3};
     width: 25rem;
   }

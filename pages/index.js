@@ -22,8 +22,8 @@ export default function Home({ posts, teams, projects }) {
       <About props={posts} />
       <Services props={posts} />
       <Projects props={projects} />
-      <Contact props={posts} />
       <Team props={teams} />
+      <Contact props={posts} />
     </>
   );
 }

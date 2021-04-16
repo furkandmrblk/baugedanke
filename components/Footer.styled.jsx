@@ -50,24 +50,6 @@ export const FooterColumn2 = styled.div`
   }
 `;
 
-// Footer Logo
-export const FooterLogo = styled.div`
-  background-image: url('/Logo.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  height: 7.5rem;
-  width: 7.5rem;
-
-  margin-bottom: 0.75rem;
-
-  @media (max-width: ${media.tablet}) {
-    height: 6rem;
-    width: 6rem;
-  }
-`;
-
 // Footer Name
 export const FooterName = styled.h1`
   font-size: ${typeface.$sm};
