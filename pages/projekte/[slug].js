@@ -41,7 +41,6 @@ export async function getStaticProps({ params }) {
 
   let data2 = await client.getEntries({
     content_type: 'baugedanke',
-    'fields.slug': params.slug,
   });
 
   return {
