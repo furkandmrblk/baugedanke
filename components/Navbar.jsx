@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import {
   NavButton,
@@ -20,6 +20,14 @@ export const Navbar = () => {
   const openMenu = () => {
     setOpen(!open);
   };
+
+  useEffect(() => {
+    if (open === true) {
+      document.body.style.overflow = 'hidden';
+    } else if (open === false) {
+      document.body.style.overflow = '';
+    }
+  });
 
   return (
     <NavContainer>
