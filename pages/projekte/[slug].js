@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Project } from '../../components/Project';
+import { Footer } from '../../components/Footer';
 
 const spaceId = process.env.NEXT_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_CONTENTFUL_ACCESS_TOKEN;
@@ -10,10 +11,11 @@ const client = contentful.createClient({
   accessToken: accessToken,
 });
 
-export default function ProjectPage({ post }) {
+export default function ProjectPage({ post, posts }) {
   return (
     <>
       <Project props={post} />
+      <Footer props={posts} />
     </>
   );
 }
@@ -37,9 +39,15 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
+  let data2 = await client.getEntries({
+    content_type: 'baugedanke',
+    'fields.slug': params.slug,
+  });
+
   return {
     props: {
       post: data.items[0],
+      posts: data2.items[0],
     },
   };
 }

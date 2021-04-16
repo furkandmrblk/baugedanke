@@ -5,6 +5,7 @@ import { media } from '../theme/MediaQueries';
 
 // About Container
 export const AboutContainer = styled.div`
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +25,7 @@ export const AboutBackground = styled.div`
   z-index: -1;
   position: absolute;
 
+  bottom: 0;
   right: 0;
 
   height: 34.8125rem;
@@ -41,26 +43,24 @@ export const AboutBackground = styled.div`
   }
   @media (max-width: ${media.laptopS}) {
     height: 21rem;
-    margin-top: 25rem;
+    margin-bottom: -2rem;
   }
   @media (max-width: ${media.tablet}) {
     height: 17rem;
     width: 28rem;
-    margin-top: 19.5rem;
+    margin-bottom: -1.5rem;
   }
   @media (max-width: ${media.between}) {
     height: 13.5rem;
     width: 24rem;
-    margin-top: 19.5rem;
+    margin-bottom: -1.25rem;
   }
   @media (max-width: ${media.mobileL}) {
     height: 11.5rem;
     width: 19rem;
-    margin-top: 16.75rem;
   }
   @media (max-width: ${media.mobileM}) {
     width: 19.5rem;
-    margin-top: 14.75rem;
   }
 `;
 

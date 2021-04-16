@@ -11,7 +11,9 @@ import {
   FooterTitle,
 } from './Footer.styled';
 
-export const Footer = () => {
+export const Footer = (props) => {
+  const data = props.props.fields;
+
   return (
     <FooterContainer>
       <FooterColumn2>
@@ -50,10 +52,8 @@ export const Footer = () => {
       </FooterColumn>
       <FooterColumn>
         <FooterTitle>Kontakt</FooterTitle>
-        <FooterItem href="mailto:info@baugedanke.de">
-          info@baugedanke.de
-        </FooterItem>
-        <FooterItem>030 484 737 00</FooterItem>
+        <FooterItem href={'mailto:' + data.email}>{data.email}</FooterItem>
+        <FooterItem href={'tel:' + data.telefon}>{data.telefon}</FooterItem>
       </FooterColumn>
     </FooterContainer>
   );

@@ -176,7 +176,7 @@ export const NavHamburger = styled.span`
   border: 1px solid ${color.$black};
 
   background-color: ${({ open }) =>
-    open ? `${color.$white}` : `${color.$white}`};
+    open ? `${color.$white}` : `${color.$black}`};
 
   &:first-child {
     margin-bottom: 0.7rem;
@@ -189,9 +189,6 @@ export const NavHamburger = styled.span`
 
     border: ${({ open }) =>
       open ? `0.7px solid ${color.$white}` : `0.7px solid ${color.$black}`};
-
-    background-color: ${({ open }) =>
-      open ? `${color.$white}` : `${color.$white}`};
 
     &:first-child {
       margin-bottom: 0.6rem;
