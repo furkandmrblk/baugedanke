@@ -1,9 +1,10 @@
-import { About } from '../components/About';
-import { Contact } from '../components/Contact';
+import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
-import { Projects } from '../components/Projects';
+import { About } from '../components/About';
 import { Services } from '../components/Services';
+import { Projects } from '../components/Projects';
 import { Team } from '../components/Team';
+import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
 const spaceId = process.env.NEXT_CONTENTFUL_SPACE_ID;
@@ -19,6 +20,7 @@ const client = contentful.createClient({
 export default function Home({ posts, teams, projects }) {
   return (
     <>
+      <Navbar props={posts} />
       <Hero props={posts} />
       <About props={posts} />
       <Services props={posts} />

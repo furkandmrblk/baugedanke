@@ -5,6 +5,7 @@ import {
   ProjectsInnerSlider,
   ProjectsItem,
   ProjectsSlider,
+  ProjectsMobileSlider,
   ProjectsTitle,
   ProjectsDiv,
   ProjectCTA,
@@ -51,6 +52,36 @@ export const Projects = (props) => {
       checkBoundary();
     });
 
+    // Mobile Slider
+    const sliderMobile = document.getElementById('sliderMobile');
+    const innerSliderMobile = document.getElementById('innerSliderMobile');
+    const box = document.getElementById('box');
+
+    let width = box.offsetWidth + 30;
+    innerSliderMobile.style.minWidth = `${box.length * width}px`;
+    let start;
+    let change;
+
+    sliderMobile.addEventListener('touchstart', (e) => {
+      start = e.touches[0].clientX;
+    });
+
+    sliderMobile.addEventListener('touchmove', (e) => {
+      e.preventDefault();
+      let touch = e.touches[0];
+      change = start - touch.clientX;
+    });
+
+    sliderMobile.addEventListener('touchend', slideShow);
+
+    function slideShow() {
+      if (change > 0) {
+        sliderMobile.scrollLeft += width;
+      } else {
+        sliderMobile.scrollLeft -= width;
+      }
+    }
+
     function checkBoundary() {
       let outer = slider.getBoundingClientRect();
       let inner = innerSlider.getBoundingClientRect();
@@ -85,6 +116,25 @@ export const Projects = (props) => {
             ))}
           </ProjectsInnerSlider>
         </ProjectsSlider>
+        <ProjectsMobileSlider id="sliderMobile">
+          <ProjectsInnerSlider id="innerSliderMobile">
+            {data.map((project) => (
+              <ProjectsItem
+                id="box"
+                key={project.sys.id}
+                style={{
+                  backgroundImage: `url('https:${project.fields.projectImage.fields.file.url}')`,
+                }}
+              >
+                <Link href={'/projekte/' + project.fields.slug}>
+                  <ProjectCTA>
+                    <ProjectCTAText>Zum Projekt</ProjectCTAText>
+                  </ProjectCTA>
+                </Link>
+              </ProjectsItem>
+            ))}
+          </ProjectsInnerSlider>
+        </ProjectsMobileSlider>
       </ProjectsDiv>
     </ProjectsContainer>
   );

@@ -220,7 +220,7 @@ export const TeamCardJob = styled.h2`
 `;
 
 // Team Card -Number
-export const TeamCardNumber = styled.h2`
+export const TeamCardNumber = styled.a`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
   color: ${color.$white};

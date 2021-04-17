@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Navbar } from '../../components/Navbar';
 import { Project } from '../../components/Project';
 import { Footer } from '../../components/Footer';
 
@@ -14,6 +15,7 @@ const client = contentful.createClient({
 export default function ProjectPage({ post, posts }) {
   return (
     <>
+      <Navbar props={posts} />
       <Project props={post} />
       <Footer props={posts} />
     </>

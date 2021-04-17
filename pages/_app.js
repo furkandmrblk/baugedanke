@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Navbar } from '../components/Navbar';
 import GlobalStyle from '../theme/GlobalStyle';
 
 function MyApp({ Component, pageProps }) {
@@ -13,7 +12,6 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <GlobalStyle />
-      <Navbar />
       <Component {...pageProps} />
     </>
   );

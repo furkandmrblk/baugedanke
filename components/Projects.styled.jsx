@@ -102,7 +102,8 @@ export const ProjectsSlider = styled.div`
     height: 20rem;
   }
   @media (max-width: ${media.tablet}) {
-    height: 16rem;
+    /* height: 16rem; */
+    display: none;
   }
 `;
 
@@ -212,5 +213,27 @@ export const ProjectsInnerSlider = styled.div`
   @media (max-width: ${media.mobileS}) {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+`;
+
+// Projects Mobile Slider
+export const ProjectsMobileSlider = styled.div`
+  @media (min-width: ${media.tablet}) {
+    display: none;
+  }
+  @media (max-width: ${media.tablet}) {
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    height: 30rem;
+
+    overflow: hidden;
+
+    height: 16rem;
+
+    scroll-behavior: smooth;
   }
 `;

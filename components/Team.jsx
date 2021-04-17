@@ -28,7 +28,9 @@ export const Team = (props) => {
             )}
             <TeamCardName>{person.fields.teamsName}</TeamCardName>
             <TeamCardJob>{person.fields.teamsJob}</TeamCardJob>
-            <TeamCardNumber>{person.fields.teamsNumber}</TeamCardNumber>
+            <TeamCardNumber href={'tel:' + person.fields.teamsNumber}>
+              {person.fields.teamsNumber}
+            </TeamCardNumber>
           </TeamCard>
         ))}
       </TeamBottomDiv>

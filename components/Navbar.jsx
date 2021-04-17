@@ -15,7 +15,9 @@ import {
   NavRightItem,
 } from './Navbar.styled';
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+  const data = props.props.fields;
+
   const [open, setOpen] = useState(false);
   const openMenu = () => {
     setOpen(!open);
@@ -75,7 +77,7 @@ export const Navbar = () => {
           <Link href="/#unserteam">
             <NavItem>Unser Team</NavItem>
           </Link>
-          <NavButton href="mailto:info@baugedanke.de">Kontakt</NavButton>
+          <NavButton href={'mailto:' + data.email}>Kontakt</NavButton>
         </NavItemDiv>
       </NavDiv>
     </NavContainer>

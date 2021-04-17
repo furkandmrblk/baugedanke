@@ -19,6 +19,7 @@ import {
 
 export const Project = (props) => {
   const data = props.props.fields;
+  console.log(data.projectText3);
 
   return (
     <ProjectContainer>
