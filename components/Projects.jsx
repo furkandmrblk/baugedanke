@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
   ProjectsContainer,
@@ -14,6 +14,8 @@ import {
 
 export const Projects = (props) => {
   const data = props.props;
+
+  const innerSliderRef = useRef(null);
 
   useEffect(() => {
     const slider = document.getElementById('slider');
@@ -117,7 +119,7 @@ export const Projects = (props) => {
           </ProjectsInnerSlider>
         </ProjectsSlider>
         <ProjectsMobileSlider id="sliderMobile">
-          <ProjectsInnerSlider id="innerSliderMobile">
+          <ProjectsInnerSlider id="innerSliderMobile" ref={innerSliderRef}>
             {data.map((project) => (
               <ProjectsItem
                 id="box"

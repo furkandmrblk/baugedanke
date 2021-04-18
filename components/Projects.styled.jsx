@@ -233,7 +233,5 @@ export const ProjectsMobileSlider = styled.div`
     overflow: hidden;
 
     height: 16rem;
-
-    scroll-behavior: smooth;
   }
 `;

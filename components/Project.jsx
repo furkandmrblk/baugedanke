@@ -19,7 +19,6 @@ import {
 
 export const Project = (props) => {
   const data = props.props.fields;
-  console.log(data.projectText3);
 
   return (
     <ProjectContainer>
@@ -35,7 +34,21 @@ export const Project = (props) => {
           <ProjectDescription>{data.projectDescription}</ProjectDescription>
           <ProjectHeroColumn>
             <ProjectTextTitle>{data.projectTextTitle}</ProjectTextTitle>
-            <ProjectText>{data.projectText}</ProjectText>
+            <ProjectText>
+              {data.projectText
+                .replace(/\\n/g, ' ')
+                .split('\n')
+                .map((t, i) =>
+                  i > 0 ? (
+                    <>
+                      <br />
+                      {t}
+                    </>
+                  ) : (
+                    t
+                  )
+                )}
+            </ProjectText>
           </ProjectHeroColumn>
         </ProjectColumn>
       </ProjectRow>
@@ -57,7 +70,21 @@ export const Project = (props) => {
         </ProjectColumn>
         <ProjectColumn>
           <ProjectTextTitle>{data.projectTextTitle2}</ProjectTextTitle>
-          <ProjectText>{data.projectText2}</ProjectText>
+          <ProjectText>
+            {data.projectText2
+              .replace(/\\n/g, ' ')
+              .split('\n')
+              .map((t, i) =>
+                i > 0 ? (
+                  <>
+                    <br />
+                    {t}
+                  </>
+                ) : (
+                  t
+                )
+              )}
+          </ProjectText>
         </ProjectColumn>
       </ProjectRow>
       <ProjectBigImage
@@ -73,13 +100,41 @@ export const Project = (props) => {
         />
         <ProjectColumn>
           <ProjectTextTitle>{data.projectTextTitle3}</ProjectTextTitle>
-          <ProjectText>{data.projectText3}</ProjectText>
+          <ProjectText>
+            {data.projectText3
+              .replace(/\\n/g, ' ')
+              .split('\n')
+              .map((t, i) =>
+                i > 0 ? (
+                  <>
+                    <br />
+                    {t}
+                  </>
+                ) : (
+                  t
+                )
+              )}
+          </ProjectText>
         </ProjectColumn>
       </ProjectRow>
       <ProjectRow>
         <ProjectColumn>
           <ProjectTextTitle>{data.projectTextTitle4}</ProjectTextTitle>
-          <ProjectText>{data.projectText4}</ProjectText>
+          <ProjectText>
+            {data.projectText4
+              .replace(/\\n/g, ' ')
+              .split('\n')
+              .map((t, i) =>
+                i > 0 ? (
+                  <>
+                    <br />
+                    {t}
+                  </>
+                ) : (
+                  t
+                )
+              )}
+          </ProjectText>
         </ProjectColumn>
         <ProjectImage
           style={{

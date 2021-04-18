@@ -5,13 +5,14 @@ import * as typeface from './GlobalFonts';
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
-    scroll-behavior: smooth;
   }
   *,
   *::before,
   *::after {
     box-sizing: inherit;
+    scroll-behavior: smooth;
   }
+  
   body{
     padding: 0;
     margin: 0;
@@ -20,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
     background-color: ${color.$white};
     color: ${color.$black};
     overflow-x: hidden;
+    
 
     
     h1,h2,h3,h4,h5,h6, p {
