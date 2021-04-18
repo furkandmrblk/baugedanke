@@ -40,10 +40,10 @@ export const Project = (props) => {
                 .split('\n')
                 .map((t, i) =>
                   i > 0 ? (
-                    <>
+                    <span key={i}>
                       <br />
                       {t}
-                    </>
+                    </span>
                   ) : (
                     t
                   )
@@ -76,10 +76,10 @@ export const Project = (props) => {
               .split('\n')
               .map((t, i) =>
                 i > 0 ? (
-                  <>
+                  <span key={i}>
                     <br />
                     {t}
-                  </>
+                  </span>
                 ) : (
                   t
                 )
@@ -106,10 +106,10 @@ export const Project = (props) => {
               .split('\n')
               .map((t, i) =>
                 i > 0 ? (
-                  <>
+                  <span key={i}>
                     <br />
                     {t}
-                  </>
+                  </span>
                 ) : (
                   t
                 )
@@ -126,10 +126,10 @@ export const Project = (props) => {
               .split('\n')
               .map((t, i) =>
                 i > 0 ? (
-                  <>
+                  <span key={i}>
                     <br />
                     {t}
-                  </>
+                  </span>
                 ) : (
                   t
                 )

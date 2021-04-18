@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import Link from 'next/link';
 import {
   ProjectsContainer,
@@ -18,6 +19,8 @@ export const Projects = (props) => {
   const innerSliderRef = useRef(null);
 
   useEffect(() => {
+    smoothscroll.polyfill();
+
     const slider = document.getElementById('slider');
     const innerSlider = document.getElementById('innerSlider');
 
