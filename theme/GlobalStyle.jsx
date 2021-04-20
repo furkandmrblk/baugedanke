@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   *::after {
     box-sizing: inherit;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
   
   body{

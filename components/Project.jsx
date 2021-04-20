@@ -26,16 +26,16 @@ export const Project = (props) => {
       <ProjectRow>
         <ProjectImage
           style={{
-            backgroundImage: `url('https:${data.projectImage.fields.file.url}')`,
+            backgroundImage: `url('https:${data.projektBild.fields.file.url}')`,
           }}
         />
         <ProjectColumn>
-          <ProjectTitle>{data.projectTitle}</ProjectTitle>
-          <ProjectDescription>{data.projectDescription}</ProjectDescription>
+          <ProjectTitle>{data.projektTitel}</ProjectTitle>
+          <ProjectDescription>{data.projektBeschreibung}</ProjectDescription>
           <ProjectHeroColumn>
-            <ProjectTextTitle>{data.projectTextTitle}</ProjectTextTitle>
+            <ProjectTextTitle>{data.projektTextTitel}</ProjectTextTitle>
             <ProjectText>
-              {data.projectText
+              {data.projektText
                 .replace(/\\n/g, ' ')
                 .split('\n')
                 .map((t, i) =>
@@ -69,9 +69,9 @@ export const Project = (props) => {
           </ProjectDetailsDiv>
         </ProjectColumn>
         <ProjectColumn>
-          <ProjectTextTitle>{data.projectTextTitle2}</ProjectTextTitle>
+          <ProjectTextTitle>{data.projektTextTitel2}</ProjectTextTitle>
           <ProjectText>
-            {data.projectText2
+            {data.projektText2
               .replace(/\\n/g, ' ')
               .split('\n')
               .map((t, i) =>
@@ -89,19 +89,19 @@ export const Project = (props) => {
       </ProjectRow>
       <ProjectBigImage
         style={{
-          backgroundImage: `url('https:${data.projectImage2.fields.file.url}')`,
+          backgroundImage: `url('https:${data.projektBild2.fields.file.url}')`,
         }}
       />
       <ProjectRow>
         <ProjectImage
           style={{
-            backgroundImage: `url('https:${data.projectImage3.fields.file.url}')`,
+            backgroundImage: `url('https:${data.projektBild3.fields.file.url}')`,
           }}
         />
         <ProjectColumn>
-          <ProjectTextTitle>{data.projectTextTitle3}</ProjectTextTitle>
+          <ProjectTextTitle>{data.projektTextTitel3}</ProjectTextTitle>
           <ProjectText>
-            {data.projectText3
+            {data.projektText3
               .replace(/\\n/g, ' ')
               .split('\n')
               .map((t, i) =>
@@ -119,9 +119,9 @@ export const Project = (props) => {
       </ProjectRow>
       <ProjectRow>
         <ProjectColumn>
-          <ProjectTextTitle>{data.projectTextTitle4}</ProjectTextTitle>
+          <ProjectTextTitle>{data.projektTextTitel4}</ProjectTextTitle>
           <ProjectText>
-            {data.projectText4
+            {data.projektText4
               .replace(/\\n/g, ' ')
               .split('\n')
               .map((t, i) =>
@@ -138,7 +138,7 @@ export const Project = (props) => {
         </ProjectColumn>
         <ProjectImage
           style={{
-            backgroundImage: `url('https:${data.projectImage4.fields.file.url}')`,
+            backgroundImage: `url('https:${data.projektBild4.fields.file.url}')`,
           }}
         />
       </ProjectRow>

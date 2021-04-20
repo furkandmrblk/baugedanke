@@ -21,13 +21,13 @@ export const Services = (props) => {
     <ServicesContainer id="unsereleistungen">
       <ServicesImage
         style={{
-          backgroundImage: `url('https:${data.servicesImage.fields.file.url}')`,
+          backgroundImage: `url('https:${data.leistungenBild.fields.file.url}')`,
         }}
       />
       <ServicesBottomDiv>
         <ServicesTextDiv>
-          <ServicesTitle>{data.servicesTitle}</ServicesTitle>
-          <ServicesText>{data.servicesText}</ServicesText>
+          <ServicesTitle>{data.leistungenTitel}</ServicesTitle>
+          <ServicesText>{data.leistungenText}</ServicesText>
         </ServicesTextDiv>
         <ServicesWrapper>
           <ServicesItemDiv>

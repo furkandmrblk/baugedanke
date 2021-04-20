@@ -19,17 +19,17 @@ export const Team = (props) => {
       <TeamBottomDiv>
         {data.map((person) => (
           <TeamCard key={person.sys.id}>
-            {person.fields.teamsImage && (
+            {person.fields.teamsBild && (
               <TeamCardImage
                 style={{
-                  backgroundImage: `url('https:${person.fields.teamsImage.fields.file.url}')`,
+                  backgroundImage: `url('https:${person.fields.teamsBild.fields.file.url}')`,
                 }}
               />
             )}
             <TeamCardName>{person.fields.teamsName}</TeamCardName>
             <TeamCardJob>{person.fields.teamsJob}</TeamCardJob>
-            <TeamCardNumber href={'tel:' + person.fields.teamsNumber}>
-              {person.fields.teamsNumber}
+            <TeamCardNumber href={'tel:' + person.fields.teamsTelefonnummer}>
+              {person.fields.teamsTelefonnummer}
             </TeamCardNumber>
           </TeamCard>
         ))}

@@ -15,12 +15,12 @@ export const About = (props) => {
     <AboutContainer id="uberuns">
       <AboutBackground />
       <AboutTextDiv>
-        <AboutTitle>{data.aboutTitle}</AboutTitle>
-        <AboutText>{data.aboutText}</AboutText>
+        <AboutTitle>{data.berUnsTitel}</AboutTitle>
+        <AboutText>{data.berUnsText}</AboutText>
       </AboutTextDiv>
       <AboutImage
         style={{
-          backgroundImage: `url('https:${data.aboutImage.fields.file.url}')`,
+          backgroundImage: `url('https:${data.berUnsBild.fields.file.url}')`,
         }}
       />
     </AboutContainer>

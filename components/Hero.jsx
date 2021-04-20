@@ -6,10 +6,10 @@ export const Hero = (props) => {
 
   return (
     <HeroContainer>
-      <HeroTitle>{data.heroTitle}</HeroTitle>
+      <HeroTitle>{data.heroTitel}</HeroTitle>
       <HeroImage
         style={{
-          backgroundImage: `url('https:${data.heroImage.fields.file.url}')`,
+          backgroundImage: `url('https:${data.heroBild.fields.file.url}')`,
         }}
       />
     </HeroContainer>

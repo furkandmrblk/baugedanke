@@ -17,8 +17,8 @@ export const Contact = (props) => {
   return (
     <ContactContainer id="kontakt">
       <ContactLeftDiv>
-        <ContactTitle>{data.contactTitle}</ContactTitle>
-        <ContactText>{data.contactText}</ContactText>
+        <ContactTitle>{data.kontaktTitel}</ContactTitle>
+        <ContactText>{data.kontaktText}</ContactText>
         <ContactLabel>Name</ContactLabel>
         <ContactInput type="text" />
         <ContactLabel>Email</ContactLabel>
@@ -29,7 +29,7 @@ export const Contact = (props) => {
       </ContactLeftDiv>
       <ContactImage
         style={{
-          backgroundImage: `url('https:${data.contactImage.fields.file.url}')`,
+          backgroundImage: `url('https:${data.kontaktBild.fields.file.url}')`,
         }}
       />
     </ContactContainer>

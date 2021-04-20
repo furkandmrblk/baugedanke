@@ -7,6 +7,9 @@ import { Team } from '../components/Team';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
 
+import smoothscroll from 'smoothscroll-polyfill';
+import { useEffect } from 'react';
+
 const spaceId = process.env.NEXT_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_CONTENTFUL_ACCESS_TOKEN;
 
@@ -18,6 +21,10 @@ const client = contentful.createClient({
 });
 
 export default function Home({ posts, teams, projects }) {
+  useEffect(() => {
+    smoothscroll.polyfill();
+  });
+
   return (
     <>
       <Navbar props={posts} />
