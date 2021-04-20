@@ -15,8 +15,6 @@ import {
 export const Projects = (props) => {
   const data = props.props;
 
-  const innerSliderRef = useRef(null);
-
   useEffect(() => {
     const slider = document.getElementById('slider');
     const innerSlider = document.getElementById('innerSlider');
@@ -57,24 +55,44 @@ export const Projects = (props) => {
     // Mobile Slider
     const sliderMobile = document.getElementById('sliderMobile');
     const innerSliderMobile = document.getElementById('innerSliderMobile');
-    const box = document.getElementById('box');
+    // const box = document.getElementById('box');
 
-    let width = box.offsetWidth + 30;
-    innerSliderMobile.style.minWidth = `${box.length * width}px`;
-    let start;
-    let change;
+    // let width = box.offsetWidth + 30;
+    // innerSliderMobile.style.minWidth = `${box.length * width}px`;
+    // let start;
+    // let change;
+
+    let pressedMobile = false;
+    let startXMobile;
+    let xMobile;
 
     sliderMobile.addEventListener('touchstart', (e) => {
-      start = e.touches[0].clientX;
+      // start = e.touches[0].clientX;
+      pressedMobile = true;
+      e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
+      startXMobile = e.offsetX - innerSliderMobile.offsetLeft;
+    });
+
+    window.addEventListener('touchend', () => {
+      pressedMobile = false;
     });
 
     sliderMobile.addEventListener('touchmove', (e) => {
+      // e.preventDefault();
+      // let touch = e.touches[0];
+      // change = start - touch.clientX;
+
+      if (!pressedMobile) return;
       e.preventDefault();
-      let touch = e.touches[0];
-      change = start - touch.clientX;
+      e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
+      xMobile = e.offsetX;
+
+      innerSliderMobile.style.left = `${xMobile - startXMobile}px`;
+
+      checkBoundaryMobile();
     });
 
-    sliderMobile.addEventListener('touchend', slideShow);
+    // sliderMobile.addEventListener('touchend', slideShow);
 
     function slideShow() {
       if (change > 0) {
@@ -92,6 +110,17 @@ export const Projects = (props) => {
         innerSlider.style.left = '0px';
       } else if (inner.right < outer.right) {
         innerSlider.style.left = `-${inner.width - outer.width}px`;
+      }
+    }
+
+    function checkBoundaryMobile() {
+      let outer = sliderMobile.getBoundingClientRect();
+      let inner = innerSliderMobile.getBoundingClientRect();
+
+      if (parseInt(innerSliderMobile.style.left) > 0) {
+        innerSliderMobile.style.left = '0px';
+      } else if (inner.right < outer.right) {
+        innerSliderMobile.style.left = `-${inner.width - outer.width}px`;
       }
     }
   });
@@ -119,7 +148,7 @@ export const Projects = (props) => {
           </ProjectsInnerSlider>
         </ProjectsSlider>
         <ProjectsMobileSlider id="sliderMobile">
-          <ProjectsInnerSlider id="innerSliderMobile" ref={innerSliderRef}>
+          <ProjectsInnerSlider id="innerSliderMobile">
             {data.map((project) => (
               <ProjectsItem
                 id="box"
