@@ -55,19 +55,11 @@ export const Projects = (props) => {
     // Mobile Slider
     const sliderMobile = document.getElementById('sliderMobile');
     const innerSliderMobile = document.getElementById('innerSliderMobile');
-    // const box = document.getElementById('box');
-
-    // let width = box.offsetWidth + 30;
-    // innerSliderMobile.style.minWidth = `${box.length * width}px`;
-    // let start;
-    // let change;
-
     let pressedMobile = false;
     let startXMobile;
     let xMobile;
 
     sliderMobile.addEventListener('touchstart', (e) => {
-      // start = e.touches[0].clientX;
       pressedMobile = true;
       e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
       startXMobile = e.offsetX - innerSliderMobile.offsetLeft;
@@ -78,10 +70,6 @@ export const Projects = (props) => {
     });
 
     sliderMobile.addEventListener('touchmove', (e) => {
-      // e.preventDefault();
-      // let touch = e.touches[0];
-      // change = start - touch.clientX;
-
       if (!pressedMobile) return;
       e.preventDefault();
       e.offsetX = e.touches[0].pageX - e.touches[0].target.offsetLeft;
@@ -91,8 +79,6 @@ export const Projects = (props) => {
 
       checkBoundaryMobile();
     });
-
-    // sliderMobile.addEventListener('touchend', slideShow);
 
     function slideShow() {
       if (change > 0) {

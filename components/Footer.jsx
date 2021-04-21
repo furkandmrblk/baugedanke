@@ -43,7 +43,7 @@ export const Footer = (props) => {
         <Link href="/impressum">
           <FooterItem>Impressum</FooterItem>
         </Link>
-        <Link href="/datenschutzerklärung">
+        <Link href="/datenschutzerklaerung">
           <FooterItem>Datenschutzerklärung</FooterItem>
         </Link>
         <Link href="/agb">
