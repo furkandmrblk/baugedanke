@@ -287,3 +287,29 @@ export const ContactImage = styled.div`
     display: none;
   }
 `;
+
+// Success & Error Message
+export const SuccessMessage = styled.h2`
+  font-size: ${typeface.$xs};
+  color: ${color.$success};
+  margin-top: 1rem;
+
+  @media (max-width: ${media.tablet}) {
+    font-size: ${typeface.$xs2};
+  }
+  @media (max-width: ${media.mobileM}) {
+    font-size: ${typeface.$sm4};
+  }
+`;
+
+export const ErrorMessage = styled.h2`
+  font-size: ${typeface.$xs};
+  color: ${color.$error};
+  margin-top: 1rem;
+  @media (max-width: ${media.tablet}) {
+    font-size: ${typeface.$xs2};
+  }
+  @media (max-width: ${media.mobileM}) {
+    font-size: ${typeface.$sm4};
+  }
+`;

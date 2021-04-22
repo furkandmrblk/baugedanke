@@ -50,5 +50,6 @@ export async function getStaticProps({ params }) {
       post: data.items[0],
       posts: data2.items[0],
     },
+    revalidate: 60,
   };
 }

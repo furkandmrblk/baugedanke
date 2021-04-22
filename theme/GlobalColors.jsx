@@ -8,3 +8,7 @@ export const $blue = '#2094FF';
 export const $darkgreen = '#007C75';
 export const $lightgreen = '#00C19E';
 export const $yellow = '#FCBA08';
+
+// Success & Error
+export const $success = '#009944';
+export const $error = '#cf000f';

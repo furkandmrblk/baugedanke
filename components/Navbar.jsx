@@ -60,8 +60,10 @@ export const Navbar = (props) => {
             </Link>
           </NavMenuLeft>
           <NavMenuRight>
-            <NavRightItem>Impressum</NavRightItem>
-            <NavRightItem>Datenschutzerklärung</NavRightItem>
+            <NavRightItem href="/impressum">Impressum</NavRightItem>
+            <NavRightItem href="/datenschutzerklaerung">
+              Datenschutzerklärung
+            </NavRightItem>
           </NavMenuRight>
         </NavMenu>
         <NavItemDiv>
