@@ -3,8 +3,8 @@ module.exports = {
     domains: ['images.ctfassets.net'],
   },
   env: {
-    SERVICE_ID: process.env.SERVICE_ID,
-    TEMPLATE_ID: process.env.TEMPLATE_ID,
-    USER_ID: process.env.USER_ID,
+    NEXT_SERVICE_ID: process.env.SERVICE_ID,
+    NEXT_TEMPLATE_ID: process.env.TEMPLATE_ID,
+    NEXT_USER_ID: process.env.USER_ID,
   },
 };

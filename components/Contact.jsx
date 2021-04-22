@@ -14,9 +14,9 @@ import {
   SuccessMessage,
 } from './Contact.styled';
 
-const SERVICE_ID = process.env.SERVICE_ID;
-const TEMPLATE_ID = process.env.TEMPLATE_ID;
-const USER_ID = process.env.USER_ID;
+const SERVICE_ID = process.env.NEXT_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_TEMPLATE_ID;
+const USER_ID = process.env.NEXT_USER_ID;
 init(USER_ID);
 
 export const Contact = (props) => {
