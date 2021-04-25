@@ -13,8 +13,14 @@ const client = contentful.createClient({
 });
 
 export default function ProjectPage({ post, posts }) {
+  const data = post.fields;
   return (
     <>
+      <Head>
+        <title>Baugedanke | {data.projektTitel}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content={data.projektBeschreibung} />
+      </Head>
       <Navbar props={posts} />
       <Project props={post} />
       <Footer props={posts} />

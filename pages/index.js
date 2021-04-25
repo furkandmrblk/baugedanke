@@ -9,6 +9,7 @@ import { Footer } from '../components/Footer';
 
 import smoothscroll from 'smoothscroll-polyfill';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 const spaceId = process.env.NEXT_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_CONTENTFUL_ACCESS_TOKEN;
@@ -27,6 +28,18 @@ export default function Home({ posts, teams, projects }) {
 
   return (
     <>
+      <Head>
+        <title>Baugedanke Berlin | Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="
+          Baugedanke Berlin ist ein dynamisches, junges und gut organisiertes
+          Team, welches Ihnen beim Bauvorhaben möglichst sorgenfrei modern und
+          mit viel handwerklichem Geschick unter die Arme greift.
+        "
+        />
+      </Head>
       <Navbar props={posts} />
       <Hero props={posts} />
       <About props={posts} />
