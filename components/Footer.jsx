@@ -46,14 +46,14 @@ export const Footer = (props) => {
         <Link href="/datenschutzerklaerung">
           <FooterItem>Datenschutzerklärung</FooterItem>
         </Link>
-        <Link href="/agb">
-          <FooterItem>AGB</FooterItem>
-        </Link>
       </FooterColumn>
       <FooterColumn>
         <FooterTitle>Kontakt</FooterTitle>
         <FooterItem href={'mailto:' + data.email}>{data.email}</FooterItem>
-        <FooterItem href={'tel:' + data.telefon}>{data.telefon}</FooterItem>
+        <FooterItem href={'tel:' + data.telefon}>
+          Tel.: {data.telefon}
+        </FooterItem>
+        <FooterItem href={'fax:' + data.telefon}>Fax: {data.fax}</FooterItem>
       </FooterColumn>
     </FooterContainer>
   );
