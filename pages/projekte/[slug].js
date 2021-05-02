@@ -49,14 +49,14 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
-  // let data2 = await client.getEntries({
-  //   content_type: 'baugedanke',
-  // });
+  let data2 = await client.getEntries({
+    content_type: 'baugedanke',
+  });
 
   return {
     props: {
       post: data.items[0],
-      // posts: data2.items,
+      posts: data2.items,
     },
     revalidate: 60,
   };
