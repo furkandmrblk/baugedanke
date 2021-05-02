@@ -13,8 +13,8 @@ const client = contentful.createClient({
 });
 
 export default function ProjectPage({ post, posts }) {
-  const data = post.fields;
   if (!post) return 'Page Not Found';
+  const data = post.fields;
 
   return (
     <>
@@ -56,7 +56,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       post: data.items[0],
-      posts: data2.items[0],
+      posts: data2.items,
     },
     revalidate: 60,
   };
