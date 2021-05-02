@@ -22,6 +22,8 @@ const client = contentful.createClient({
 });
 
 export default function Home({ posts, teams, projects }) {
+  const data = posts[0];
+
   useEffect(() => {
     smoothscroll.polyfill();
   });
@@ -40,14 +42,14 @@ export default function Home({ posts, teams, projects }) {
         "
         />
       </Head>
-      <Navbar props={posts} />
-      <Hero props={posts} />
-      <About props={posts} />
-      <Services props={posts} />
+      <Navbar props={data} />
+      <Hero props={data} />
+      <About props={data} />
+      <Services props={data} />
       <Projects props={projects} />
       <Team props={teams} />
-      <Contact props={posts} />
-      <Footer props={posts} />
+      <Contact props={data} />
+      <Footer props={data} />
     </>
   );
 }
@@ -67,7 +69,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: data.items[0],
+      posts: data.items,
       teams: data2.items,
       projects: data3.items,
     },

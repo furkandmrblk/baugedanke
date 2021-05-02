@@ -12,9 +12,10 @@ const client = contentful.createClient({
   accessToken: accessToken,
 });
 
-export default function ProjectPage({ post }) {
+export default function ProjectPage({ post, posts }) {
   if (!post) return 'Page Not Found';
   const data = post.fields;
+  const alldata = posts[0];
 
   return (
     <>
@@ -23,9 +24,9 @@ export default function ProjectPage({ post }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={data.projektBeschreibung} />
       </Head>
-      <Navbar />
+      <Navbar props={alldata} />
       <Project props={post} />
-      <Footer />
+      <Footer props={alldata} />
     </>
   );
 }
