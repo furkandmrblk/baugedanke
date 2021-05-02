@@ -14,6 +14,8 @@ const client = contentful.createClient({
 
 export default function ProjectPage({ post, posts }) {
   const data = post.fields;
+  if (!post) return 'Page Not Found';
+
   return (
     <>
       <Head>
@@ -37,7 +39,7 @@ export async function getStaticPaths() {
     paths: data.items.map((item) => ({
       params: { slug: item.fields.slug },
     })),
-    fallback: false,
+    fallback: true,
   };
 }
 
