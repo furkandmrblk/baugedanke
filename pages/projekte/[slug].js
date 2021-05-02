@@ -12,7 +12,7 @@ const client = contentful.createClient({
   accessToken: accessToken,
 });
 
-export default function ProjectPage({ post, posts }) {
+export default function ProjectPage({ post }) {
   if (!post) return 'Page Not Found';
   const data = post.fields;
 
@@ -23,9 +23,9 @@ export default function ProjectPage({ post, posts }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={data.projektBeschreibung} />
       </Head>
-      <Navbar props={posts} />
+      <Navbar />
       <Project props={post} />
-      <Footer props={posts} />
+      <Footer />
     </>
   );
 }
@@ -49,14 +49,14 @@ export async function getStaticProps({ params }) {
     'fields.slug': params.slug,
   });
 
-  let data2 = await client.getEntries({
-    content_type: 'baugedanke',
-  });
+  // let data2 = await client.getEntries({
+  //   content_type: 'baugedanke',
+  // });
 
   return {
     props: {
       post: data.items[0],
-      posts: data2.items,
+      // posts: data2.items,
     },
     revalidate: 60,
   };
