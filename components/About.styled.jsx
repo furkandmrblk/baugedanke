@@ -31,8 +31,6 @@ export const AboutBackground = styled.div`
   height: 34.8125rem;
   width: 43.125rem;
 
-  background-color: ${color.$darkgreen};
-
   margin-bottom: -3.5rem;
 
   @media (max-width: ${media.laptopL}) {

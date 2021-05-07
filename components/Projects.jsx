@@ -12,8 +12,9 @@ import {
   ProjectCTAText,
 } from './Projects.styled';
 
-export const Projects = (props) => {
+export const Projects = (props, color) => {
   const data = props.props;
+  const BG = props.color.fields.farbe;
 
   useEffect(() => {
     const slider = document.getElementById('slider');
@@ -114,7 +115,7 @@ export const Projects = (props) => {
   return (
     <ProjectsContainer id="unsereprojekte">
       <ProjectsTitle>Unsere Projekte</ProjectsTitle>
-      <ProjectsDiv>
+      <ProjectsDiv style={{ backgroundColor: BG }}>
         <ProjectsSlider id="slider">
           <ProjectsInnerSlider id="innerSlider">
             {data.map((project) => (

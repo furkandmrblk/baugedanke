@@ -12,13 +12,14 @@ import {
 
 export const Team = (props) => {
   const data = props.props;
+  const BG = props.color.fields.farbe;
 
   return (
     <TeamContainer id="unserteam">
       <TeamTitle>Unser Team</TeamTitle>
       <TeamBottomDiv>
         {data.map((person) => (
-          <TeamCard key={person.sys.id}>
+          <TeamCard style={{ backgroundColor: BG }} key={person.sys.id}>
             {person.fields.teamsBild && (
               <TeamCardImage
                 style={{

@@ -70,12 +70,6 @@ export const NavItemDiv = styled.div`
 export const NavItem = styled.a`
   font-size: ${typeface.$xs};
 
-  &:hover {
-    color: ${color.$lightgreen};
-  }
-
-  transition: color 450ms ease-in-out;
-
   margin-right: 3rem;
 
   @media (max-width: ${media.laptopL}) {

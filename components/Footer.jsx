@@ -15,7 +15,7 @@ export const Footer = (props) => {
   const data = props.props.fields;
 
   return (
-    <FooterContainer>
+    <FooterContainer style={{ backgroundColor: data.farbe }}>
       <FooterColumn2>
         <FooterName>Baugedanke Berlin</FooterName>
         <FooterSlogan>Gedacht. Geplant. Gebaut.</FooterSlogan>

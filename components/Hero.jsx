@@ -6,7 +6,7 @@ export const Hero = (props) => {
 
   return (
     <HeroContainer>
-      <HeroTitle>{data.heroTitel}</HeroTitle>
+      <HeroTitle style={{ color: data.farbe }}>{data.heroTitel}</HeroTitle>
       <HeroImage
         style={{
           backgroundImage: `url('https:${data.heroBild.fields.file.url}')`,

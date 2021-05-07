@@ -24,8 +24,6 @@ export const ProjectsDiv = styled.div`
 
   align-items: center;
 
-  background-color: ${color.$darkgreen};
-
   height: 34.8125rem;
   width: 100vw;
 

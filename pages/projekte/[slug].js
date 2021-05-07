@@ -25,7 +25,7 @@ export default function ProjectPage({ post, posts }) {
         <meta name="description" content={data.projektBeschreibung} />
       </Head>
       <Navbar props={alldata} />
-      <Project props={post} />
+      <Project props={post} color={alldata} />
       <Footer props={alldata} />
     </>
   );

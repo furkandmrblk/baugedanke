@@ -19,10 +19,11 @@ import {
 
 export const Project = (props) => {
   const data = props.props.fields;
+  const BG = props.color.fields.farbe;
 
   return (
     <ProjectContainer>
-      <ProjectBackground />
+      <ProjectBackground style={{ backgroundColor: BG }} />
       <ProjectRow>
         <ProjectImage
           style={{

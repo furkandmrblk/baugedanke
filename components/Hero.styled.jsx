@@ -16,7 +16,6 @@ export const HeroContainer = styled.div`
 // Hero Title
 export const HeroTitle = styled.h1`
   font-size: ${typeface.$xl};
-  color: ${color.$darkgreen};
 
   margin-right: 15rem;
   margin-bottom: -3rem;

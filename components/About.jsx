@@ -13,7 +13,7 @@ export const About = (props) => {
 
   return (
     <AboutContainer id="uberuns">
-      <AboutBackground />
+      <AboutBackground style={{ backgroundColor: data.farbe }} />
       <AboutTextDiv>
         <AboutTitle>{data.berUnsTitel}</AboutTitle>
         <AboutText>{data.berUnsText}</AboutText>

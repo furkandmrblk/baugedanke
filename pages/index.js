@@ -42,12 +42,13 @@ export default function Home({ posts, teams, projects }) {
         "
         />
       </Head>
+
       <Navbar props={data} />
       <Hero props={data} />
       <About props={data} />
       <Services props={data} />
-      <Projects props={projects} />
-      <Team props={teams} />
+      <Projects props={projects} color={data} />
+      <Team props={teams} color={data} />
       <Contact props={data} />
       <Footer props={data} />
     </>

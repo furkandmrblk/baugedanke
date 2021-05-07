@@ -9,7 +9,6 @@ export const FooterContainer = styled.div`
   justify-content: space-around;
   align-items: flex-start;
 
-  background-color: ${color.$darkgreen};
   color: ${color.$white};
 
   padding: 10rem 11.5rem;

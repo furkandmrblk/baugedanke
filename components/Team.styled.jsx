@@ -93,7 +93,6 @@ export const TeamCard = styled.div`
   height: 24.9375rem;
   width: 21.375rem;
 
-  background-color: ${color.$darkgreen};
   color: ${color.$white};
 
   margin-right: 1.4375rem;

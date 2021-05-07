@@ -1,6 +1,7 @@
 // Base Colors
 export const $black = '#222121';
 export const $white = '#FDFDFD';
+export const $darkgray = '#8b8b8b';
 export const $gray = '#E3E3E3';
 
 // Accent Color

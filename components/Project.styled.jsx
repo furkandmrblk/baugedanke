@@ -66,8 +66,6 @@ export const ProjectBackground = styled.div`
   height: 27rem;
   width: 100vw;
 
-  background-color: ${color.$darkgreen};
-
   @media (max-width: ${media.laptopS}) {
     height: 25rem;
   }
