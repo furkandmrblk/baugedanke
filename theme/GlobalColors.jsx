@@ -5,7 +5,8 @@ export const $gray = '#E3E3E3';
 
 // Accent Color
 export const $blue = '#2094FF';
-export const $darkgreen = '#007C75';
+export const $darkgreen = '#41ae35';
+// #007C75 darkgreen
 export const $lightgreen = '#00C19E';
 export const $yellow = '#FCBA08';
 
