@@ -25,6 +25,7 @@ export const HeroTitle = styled.h1`
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xl2};
+    max-width: 38rem;
     margin-right: 10rem;
   }
   @media (max-width: ${media.laptopM}) {

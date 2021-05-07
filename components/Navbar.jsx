@@ -35,7 +35,7 @@ export const Navbar = (props) => {
     <NavContainer>
       <NavDiv>
         <Link href="/">
-          <NavLogo />
+          <NavLogo open={open} />
         </Link>
         <NavHamburgerDiv onClick={openMenu}>
           <NavHamburger open={open} />

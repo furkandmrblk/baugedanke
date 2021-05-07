@@ -17,12 +17,6 @@ export const NavContainer = styled.div`
   @media (max-width: ${media.laptopS}) {
     padding: 0rem 2rem;
   }
-  @media (max-width: ${media.tablet}) {
-    /* padding: 0rem 1.5rem; */
-  }
-  @media (max-width: ${media.mobileL}) {
-    /* padding: 0rem 1.5rem; */
-  }
 `;
 export const NavDiv = styled.div`
   z-index: 1000;
@@ -31,6 +25,10 @@ export const NavDiv = styled.div`
   align-items: center;
 
   color: ${color.$black};
+
+  overflow: hidden;
+
+  padding: 1rem 0rem;
 `;
 
 // Nav Logo
@@ -43,18 +41,19 @@ export const NavLogo = styled.div`
 
   cursor: pointer;
 
-  height: 7.5rem;
-  width: 7.5rem;
+  height: 4.3rem;
+  width: 4.5rem;
+
+  opacity: ${({ open }) => (open ? '0' : '1')};
+  transition: opacity 600ms ease-in-out;
 
   @media (max-width: ${media.tablet}) {
-    height: 6rem;
-    width: 6rem;
+    height: 3.3rem;
+    width: 3.5rem;
   }
   @media (max-width: ${media.mobileL}) {
-    height: 5rem;
-    width: 5rem;
-
-    margin-left: -1.5rem;
+    height: 2.7rem;
+    width: 2.9rem;
   }
 `;
 
