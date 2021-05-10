@@ -35,25 +35,25 @@ export const NavDiv = styled.div`
 export const NavLogo = styled.div`
   z-index: 1000;
   background-image: url('/Logo.png');
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 
   cursor: pointer;
 
-  height: 4.3rem;
-  width: 4.5rem;
+  height: 4.35rem;
+  width: 4.55rem;
 
   opacity: ${({ open }) => (open ? '0' : '1')};
   transition: opacity 600ms ease-in-out;
 
   @media (max-width: ${media.tablet}) {
-    height: 3.3rem;
+    height: 3.4rem;
     width: 3.5rem;
   }
   @media (max-width: ${media.mobileL}) {
-    height: 2.7rem;
-    width: 2.9rem;
+    height: 2.8rem;
+    width: 2.94rem;
   }
 `;
 
@@ -227,8 +227,6 @@ export const NavMenuLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
-  background-color: ${color.$darkgreen};
 
   height: 100vh;
   width: 65vw;

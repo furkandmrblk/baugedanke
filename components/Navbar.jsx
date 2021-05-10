@@ -42,7 +42,7 @@ export const Navbar = (props) => {
           <NavHamburger open={open} />
         </NavHamburgerDiv>
         <NavMenu open={open}>
-          <NavMenuLeft>
+          <NavMenuLeft style={{ backgroundColor: data.farbe }}>
             <Link href="/#uberuns">
               <NavItem onClick={openMenu}>Über Uns</NavItem>
             </Link>
