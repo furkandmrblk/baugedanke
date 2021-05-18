@@ -10,13 +10,16 @@ export const AboutContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin: 11.25rem 0rem 0rem 0rem;
+  padding-top: 7.875rem;
+
+  margin: 3.375rem 0rem 0rem 0rem;
 
   @media (max-width: ${media.laptopS}) {
     flex-direction: column;
   }
   @media (max-width: ${media.between}) {
-    margin: 5.25rem 0rem 0rem 0rem;
+    padding-top: 3.675rem;
+    margin: 1.575rem 0rem 0rem 0rem;
   }
 `;
 

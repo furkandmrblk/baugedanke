@@ -11,10 +11,12 @@ export const ProjectsContainer = styled.div`
 
   width: 100vw;
 
-  margin: 22.5rem 0rem 0rem 0rem;
+  padding-top: 11.25rem;
+  margin: 11.25rem 0rem 0rem 0rem;
 
   @media (max-width: ${media.between}) {
-    margin: 16.5rem 0rem 0rem 0rem;
+    padding-top: 8.25rem;
+    margin: 8.25rem 0rem 0rem 0rem;
   }
 `;
 
