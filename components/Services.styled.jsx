@@ -133,7 +133,7 @@ export const ServicesText = styled.h2`
   font-size: ${typeface.$sm};
 
   text-align: justify;
-  max-width: 23.9375rem;
+  max-width: 29.9375rem;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$sm2};
