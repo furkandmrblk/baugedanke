@@ -31,6 +31,7 @@ import {
 
 export const Services = (props) => {
   const data = props.props.fields;
+
   const [open1, setOpen1] = useState(false);
   const [open2, setOpen2] = useState(false);
   const [open3, setOpen3] = useState(false);
@@ -571,74 +572,62 @@ export const Services = (props) => {
               <ServicesInnerDiv onClick={openDescription}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Abriss</ServicesItem>
+                  <ServicesItem>{data.leistung1}</ServicesItem>
                   <DropdownSvg id="Arrow" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription1 open1={open1}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText1}
               </ServiceDescription1>
               <ServicesInnerDiv onClick={openDescription2}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Trockenbau</ServicesItem>
+                  <ServicesItem>{data.leistung2}</ServicesItem>
                   <DropdownSvg id="Arrow2" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription2 open2={open2}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText2}
               </ServiceDescription2>
               <ServicesInnerDiv onClick={openDescription3}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Spachtel</ServicesItem>
+                  <ServicesItem>{data.leistung3}</ServicesItem>
                   <DropdownSvg id="Arrow3" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription3 open3={open3}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText3}
               </ServiceDescription3>
               <ServicesInnerDiv onClick={openDescription4}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Maler</ServicesItem>
+                  <ServicesItem>{data.leistung4}</ServicesItem>
                   <DropdownSvg id="Arrow4" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription4 open4={open4}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText4}
               </ServiceDescription4>
               <ServicesInnerDiv onClick={openDescription5}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Lack</ServicesItem>
+                  <ServicesItem>{data.leistung5}</ServicesItem>
                   <DropdownSvg id="Arrow5" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription5 open5={open5}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText5}
               </ServiceDescription5>
               <ServicesInnerDiv onClick={openDescription6}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Fließen</ServicesItem>
+                  <ServicesItem>{data.leistung6}</ServicesItem>
                   <DropdownSvg id="Arrow6" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription6 open6={open6}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText6}
               </ServiceDescription6>
             </ServicesColumn>
           </ServicesItemDiv>
@@ -647,74 +636,62 @@ export const Services = (props) => {
               <ServicesInnerDiv onClick={openDescription7}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Estrich</ServicesItem>
+                  <ServicesItem>{data.leistung7}</ServicesItem>
                   <DropdownSvg id="Arrow7" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription7 open7={open7}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText7}
               </ServiceDescription7>
               <ServicesInnerDiv onClick={openDescription8}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Tischler</ServicesItem>
+                  <ServicesItem>{data.leistung8}</ServicesItem>
                   <DropdownSvg id="Arrow8" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription8 open8={open8}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText8}
               </ServiceDescription8>
               <ServicesInnerDiv onClick={openDescription9}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Montage</ServicesItem>
+                  <ServicesItem>{data.leistung9}</ServicesItem>
                   <DropdownSvg id="Arrow9" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription9 open9={open9}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText9}
               </ServiceDescription9>
               <ServicesInnerDiv onClick={openDescription10}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Heizung</ServicesItem>
+                  <ServicesItem>{data.leistung10}</ServicesItem>
                   <DropdownSvg id="Arrow10" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription10 open10={open10}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText10}
               </ServiceDescription10>
               <ServicesInnerDiv onClick={openDescription11}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Lüftung</ServicesItem>
+                  <ServicesItem>{data.leistung11}</ServicesItem>
                   <DropdownSvg id="Arrow11" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription11 open11={open11}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText11}
               </ServiceDescription11>
               <ServicesInnerDiv onClick={openDescription12}>
                 <ServicesSvg />
                 <ServicesInnerInnerDiv>
-                  <ServicesItem>Sanitär</ServicesItem>
+                  <ServicesItem>{data.leistung12}</ServicesItem>
                   <DropdownSvg id="Arrow12" />
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription12 open12={open12}>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua.
+                {data.leistungText12}
               </ServiceDescription12>
             </ServicesColumn2>
           </ServicesItemDiv>

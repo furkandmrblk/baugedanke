@@ -10,6 +10,7 @@ import { Footer } from '../components/Footer';
 import smoothscroll from 'smoothscroll-polyfill';
 import { useEffect } from 'react';
 import Head from 'next/head';
+import { Partners } from '../components/Partners';
 
 const spaceId = process.env.NEXT_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_CONTENTFUL_ACCESS_TOKEN;
@@ -21,7 +22,7 @@ const client = contentful.createClient({
   accessToken: accessToken,
 });
 
-export default function Home({ posts, teams, projects }) {
+export default function Home({ posts, teams, projects, partners }) {
   const data = posts[0];
 
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function Home({ posts, teams, projects }) {
       <Hero props={data} />
       <About props={data} />
       <Services props={data} />
+      <Partners props={partners} />
       <Projects props={projects} color={data} />
       <Team props={teams} color={data} />
       <Contact props={data} />
@@ -68,11 +70,16 @@ export async function getStaticProps() {
     content_type: 'baugedankeProjekte',
   });
 
+  let data4 = await client.getEntries({
+    content_type: 'baugedankePartners',
+  });
+
   return {
     props: {
       posts: data.items,
       teams: data2.items,
       projects: data3.items,
+      partners: data4.items,
     },
     revalidate: 60,
   };
