@@ -577,7 +577,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription1 open1={open1}>
-                {data.leistungText1}
+                {data.leistungText1
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription1>
               <ServicesInnerDiv onClick={openDescription2}>
                 <ServicesSvg />
@@ -587,7 +599,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription2 open2={open2}>
-                {data.leistungText2}
+                {data.leistungText2
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription2>
               <ServicesInnerDiv onClick={openDescription3}>
                 <ServicesSvg />
@@ -597,7 +621,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription3 open3={open3}>
-                {data.leistungText3}
+                {data.leistungText3
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription3>
               <ServicesInnerDiv onClick={openDescription4}>
                 <ServicesSvg />
@@ -607,7 +643,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription4 open4={open4}>
-                {data.leistungText4}
+                {data.leistungText4
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription4>
               <ServicesInnerDiv onClick={openDescription5}>
                 <ServicesSvg />
@@ -617,7 +665,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription5 open5={open5}>
-                {data.leistungText5}
+                {data.leistungText5
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription5>
               <ServicesInnerDiv onClick={openDescription6}>
                 <ServicesSvg />
@@ -627,7 +687,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription6 open6={open6}>
-                {data.leistungText6}
+                {data.leistungText6
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription6>
             </ServicesColumn>
           </ServicesItemDiv>
@@ -641,7 +713,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription7 open7={open7}>
-                {data.leistungText7}
+                {data.leistungText7
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription7>
               <ServicesInnerDiv onClick={openDescription8}>
                 <ServicesSvg />
@@ -651,7 +735,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription8 open8={open8}>
-                {data.leistungText8}
+                {data.leistungText8
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription8>
               <ServicesInnerDiv onClick={openDescription9}>
                 <ServicesSvg />
@@ -661,7 +757,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription9 open9={open9}>
-                {data.leistungText9}
+                {data.leistungText9
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription9>
               <ServicesInnerDiv onClick={openDescription10}>
                 <ServicesSvg />
@@ -671,7 +779,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription10 open10={open10}>
-                {data.leistungText10}
+                {data.leistungText10
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription10>
               <ServicesInnerDiv onClick={openDescription11}>
                 <ServicesSvg />
@@ -681,7 +801,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription11 open11={open11}>
-                {data.leistungText11}
+                {data.leistungText11
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription11>
               <ServicesInnerDiv onClick={openDescription12}>
                 <ServicesSvg />
@@ -691,7 +823,19 @@ export const Services = (props) => {
                 </ServicesInnerInnerDiv>
               </ServicesInnerDiv>
               <ServiceDescription12 open12={open12}>
-                {data.leistungText12}
+                {data.leistungText12
+                  .replace(/\\n/g, ' ')
+                  .split('\n')
+                  .map((t, i) =>
+                    i > 0 ? (
+                      <span key={i}>
+                        <br />
+                        {t}
+                      </span>
+                    ) : (
+                      t
+                    )
+                  )}
               </ServiceDescription12>
             </ServicesColumn2>
           </ServicesItemDiv>

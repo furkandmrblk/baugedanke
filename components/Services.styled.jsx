@@ -284,6 +284,7 @@ export const ServicesWrapper = styled.div`
 export const ServiceDescription1 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -303,7 +304,6 @@ export const ServiceDescription1 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open1 }) => (open1 ? '0.75rem 0rem' : '0')};
     height: ${({ open1 }) => (open1 ? '2.5rem' : '0')};
@@ -313,6 +313,7 @@ export const ServiceDescription1 = styled.h2`
 export const ServiceDescription2 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -332,7 +333,6 @@ export const ServiceDescription2 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open2 }) => (open2 ? '0.75rem 0rem' : '0')};
     height: ${({ open2 }) => (open2 ? '2.5rem' : '0')};
@@ -342,6 +342,7 @@ export const ServiceDescription2 = styled.h2`
 export const ServiceDescription3 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -361,7 +362,6 @@ export const ServiceDescription3 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open3 }) => (open3 ? '0.75rem 0rem' : '0')};
     height: ${({ open3 }) => (open3 ? '2.5rem' : '0')};
@@ -371,6 +371,7 @@ export const ServiceDescription3 = styled.h2`
 export const ServiceDescription4 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -390,7 +391,6 @@ export const ServiceDescription4 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open4 }) => (open4 ? '0.75rem 0rem' : '0')};
     height: ${({ open4 }) => (open4 ? '2.5rem' : '0')};
@@ -400,6 +400,7 @@ export const ServiceDescription4 = styled.h2`
 export const ServiceDescription5 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -419,7 +420,6 @@ export const ServiceDescription5 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open5 }) => (open5 ? '0.75rem 0rem' : '0')};
     height: ${({ open5 }) => (open5 ? '2.5rem' : '0')};
@@ -429,6 +429,7 @@ export const ServiceDescription5 = styled.h2`
 export const ServiceDescription6 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -448,7 +449,6 @@ export const ServiceDescription6 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open6 }) => (open6 ? '0.75rem 0rem' : '0')};
     height: ${({ open6 }) => (open6 ? '2.5rem' : '0')};
@@ -457,6 +457,7 @@ export const ServiceDescription6 = styled.h2`
 export const ServiceDescription7 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -476,7 +477,6 @@ export const ServiceDescription7 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open7 }) => (open7 ? '0.75rem 0rem' : '0')};
     height: ${({ open7 }) => (open7 ? '2.5rem' : '0')};
@@ -486,6 +486,7 @@ export const ServiceDescription7 = styled.h2`
 export const ServiceDescription8 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -505,7 +506,6 @@ export const ServiceDescription8 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open8 }) => (open8 ? '0.75rem 0rem' : '0')};
     height: ${({ open8 }) => (open8 ? '2.5rem' : '0')};
@@ -515,6 +515,7 @@ export const ServiceDescription8 = styled.h2`
 export const ServiceDescription9 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -534,7 +535,6 @@ export const ServiceDescription9 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open9 }) => (open9 ? '0.75rem 0rem' : '0')};
     height: ${({ open9 }) => (open9 ? '2.5rem' : '0')};
@@ -544,6 +544,7 @@ export const ServiceDescription9 = styled.h2`
 export const ServiceDescription10 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -563,7 +564,6 @@ export const ServiceDescription10 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open10 }) => (open10 ? '0.75rem 0rem' : '0')};
     height: ${({ open10 }) => (open10 ? '2.5rem' : '0')};
@@ -573,6 +573,7 @@ export const ServiceDescription10 = styled.h2`
 export const ServiceDescription11 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -592,7 +593,6 @@ export const ServiceDescription11 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open11 }) => (open11 ? '0.75rem 0rem' : '0')};
     height: ${({ open11 }) => (open11 ? '2.5rem' : '0')};
@@ -602,6 +602,7 @@ export const ServiceDescription11 = styled.h2`
 export const ServiceDescription12 = styled.h2`
   font-size: ${typeface.$xs};
   font-weight: ${typeface.$thin};
+  color: #000;
 
   text-align: justify;
   max-width: 18rem;
@@ -621,7 +622,6 @@ export const ServiceDescription12 = styled.h2`
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
-    color: #000;
 
     margin: ${({ open12 }) => (open12 ? '0.75rem 0rem' : '0')};
     height: ${({ open12 }) => (open12 ? '2.5rem' : '0')};

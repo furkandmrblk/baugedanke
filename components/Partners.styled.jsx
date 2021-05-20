@@ -75,8 +75,30 @@ export const PartnersTitle = styled.h1`
 `;
 
 // Partners Field
+export const PartnersFieldInnerDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: ${media.laptopM}) {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  @media (max-width: ${media.tablet}) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  @media (max-width: ${media.mobileL}) {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+`;
+
 export const PartnersField = styled.div`
-  background-image: url();
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -84,6 +106,30 @@ export const PartnersField = styled.div`
   height: 8rem;
   width: 8rem;
 
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+  @media (max-width: ${media.laptopM}) {
+    height: 6rem;
+    width: 6rem;
+  }
+  @media (max-width: ${media.tablet}) {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+  @media (max-width: ${media.mobileL}) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+`;
+
+export const PartnersName = styled.h2`
+  font-size: ${typeface.$sm};
+
+  @media (max-width: ${media.laptopL}) {
+    font-size: ${typeface.$sm2};
+  }
+  @media (max-width: ${media.tablet}) {
+    font-size: ${typeface.$sm3};
+  }
+  @media (max-width: ${media.mobileM}) {
+    font-size: ${typeface.$sm4};
+  }
 `;
