@@ -18,7 +18,6 @@ export const HeroTitle = styled.h1`
   font-size: ${typeface.$xl};
 
   margin-right: 15rem;
-  margin-bottom: -3rem;
 
   max-width: 40rem;
 

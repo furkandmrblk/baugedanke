@@ -208,7 +208,7 @@ export const ServicesInnerInnerDiv = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  width: 15rem;
+  width: 20rem;
 
   @media (max-width: ${media.between}) {
     width: 12.5rem;
@@ -286,27 +286,28 @@ export const ServiceDescription1 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open1 }) => (open1 ? '1rem 0rem' : '0')};
-  height: ${({ open1 }) => (open1 ? '8.5rem' : '0')};
+  height: ${({ open1 }) => (open1 ? 'auto' : '0')};
+  opacity: ${({ open1 }) => (open1 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open1 }) => (open1 ? '0.75rem 0rem' : '0')};
-    height: ${({ open1 }) => (open1 ? '5.5rem' : '0')};
+    height: ${({ open1 }) => (open1 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open1 }) => (open1 ? '0.75rem 0rem' : '0')};
-    height: ${({ open1 }) => (open1 ? '2.5rem' : '0')};
+    height: ${({ open1 }) => (open1 ? 'auto' : '0')};
   }
 `;
 
@@ -315,27 +316,28 @@ export const ServiceDescription2 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open2 }) => (open2 ? '1rem 0rem' : '0')};
-  height: ${({ open2 }) => (open2 ? '8.5rem' : '0')};
+  height: ${({ open2 }) => (open2 ? 'auto' : '0')};
+  opacity: ${({ open2 }) => (open2 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open2 }) => (open2 ? '0.75rem 0rem' : '0')};
-    height: ${({ open2 }) => (open2 ? '5.5rem' : '0')};
+    height: ${({ open2 }) => (open2 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open2 }) => (open2 ? '0.75rem 0rem' : '0')};
-    height: ${({ open2 }) => (open2 ? '2.5rem' : '0')};
+    height: ${({ open2 }) => (open2 ? 'auto' : '0')};
   }
 `;
 
@@ -344,27 +346,28 @@ export const ServiceDescription3 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open3 }) => (open3 ? '1rem 0rem' : '0')};
-  height: ${({ open3 }) => (open3 ? '8.5rem' : '0')};
+  height: ${({ open3 }) => (open3 ? 'auto' : '0')};
+  opacity: ${({ open3 }) => (open3 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open3 }) => (open3 ? '0.75rem 0rem' : '0')};
-    height: ${({ open3 }) => (open3 ? '5.5rem' : '0')};
+    height: ${({ open3 }) => (open3 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open3 }) => (open3 ? '0.75rem 0rem' : '0')};
-    height: ${({ open3 }) => (open3 ? '2.5rem' : '0')};
+    height: ${({ open3 }) => (open3 ? 'auto' : '0')};
   }
 `;
 
@@ -373,27 +376,28 @@ export const ServiceDescription4 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open4 }) => (open4 ? '1rem 0rem' : '0')};
-  height: ${({ open4 }) => (open4 ? '8.5rem' : '0')};
+  height: ${({ open4 }) => (open4 ? 'auto' : '0')};
+  opacity: ${({ open4 }) => (open4 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open4 }) => (open4 ? '0.75rem 0rem' : '0')};
-    height: ${({ open4 }) => (open4 ? '5.5rem' : '0')};
+    height: ${({ open4 }) => (open4 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open4 }) => (open4 ? '0.75rem 0rem' : '0')};
-    height: ${({ open4 }) => (open4 ? '2.5rem' : '0')};
+    height: ${({ open4 }) => (open4 ? 'auto' : '0')};
   }
 `;
 
@@ -402,27 +406,28 @@ export const ServiceDescription5 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open5 }) => (open5 ? '1rem 0rem' : '0')};
-  height: ${({ open5 }) => (open5 ? '8.5rem' : '0')};
+  height: ${({ open5 }) => (open5 ? 'auto' : '0')};
+  opacity: ${({ open5 }) => (open5 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open5 }) => (open5 ? '0.75rem 0rem' : '0')};
-    height: ${({ open5 }) => (open5 ? '5.5rem' : '0')};
+    height: ${({ open5 }) => (open5 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open5 }) => (open5 ? '0.75rem 0rem' : '0')};
-    height: ${({ open5 }) => (open5 ? '2.5rem' : '0')};
+    height: ${({ open5 }) => (open5 ? 'auto' : '0')};
   }
 `;
 
@@ -431,27 +436,28 @@ export const ServiceDescription6 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open6 }) => (open6 ? '1rem 0rem' : '0')};
-  height: ${({ open6 }) => (open6 ? '8.5rem' : '0')};
+  height: ${({ open6 }) => (open6 ? 'auto' : '0')};
+  opacity: ${({ open6 }) => (open6 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open6 }) => (open6 ? '0.75rem 0rem' : '0')};
-    height: ${({ open6 }) => (open6 ? '5.5rem' : '0')};
+    height: ${({ open6 }) => (open6 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open6 }) => (open6 ? '0.75rem 0rem' : '0')};
-    height: ${({ open6 }) => (open6 ? '2.5rem' : '0')};
+    height: ${({ open6 }) => (open6 ? 'auto' : '0')};
   }
 `;
 export const ServiceDescription7 = styled.h2`
@@ -459,27 +465,28 @@ export const ServiceDescription7 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open7 }) => (open7 ? '1rem 0rem' : '0')};
-  height: ${({ open7 }) => (open7 ? '8.5rem' : '0')};
+  height: ${({ open7 }) => (open7 ? 'auto' : '0')};
+  opacity: ${({ open7 }) => (open7 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open7 }) => (open7 ? '0.75rem 0rem' : '0')};
-    height: ${({ open7 }) => (open7 ? '5.5rem' : '0')};
+    height: ${({ open7 }) => (open7 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open7 }) => (open7 ? '0.75rem 0rem' : '0')};
-    height: ${({ open7 }) => (open7 ? '2.5rem' : '0')};
+    height: ${({ open7 }) => (open7 ? 'auto' : '0')};
   }
 `;
 
@@ -488,27 +495,28 @@ export const ServiceDescription8 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open8 }) => (open8 ? '1rem 0rem' : '0')};
-  height: ${({ open8 }) => (open8 ? '8.5rem' : '0')};
+  height: ${({ open8 }) => (open8 ? 'auto' : '0')};
+  opacity: ${({ open8 }) => (open8 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open8 }) => (open8 ? '0.75rem 0rem' : '0')};
-    height: ${({ open8 }) => (open8 ? '5.5rem' : '0')};
+    height: ${({ open8 }) => (open8 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open8 }) => (open8 ? '0.75rem 0rem' : '0')};
-    height: ${({ open8 }) => (open8 ? '2.5rem' : '0')};
+    height: ${({ open8 }) => (open8 ? 'auto' : '0')};
   }
 `;
 
@@ -517,27 +525,28 @@ export const ServiceDescription9 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open9 }) => (open9 ? '1rem 0rem' : '0')};
-  height: ${({ open9 }) => (open9 ? '8.5rem' : '0')};
+  height: ${({ open9 }) => (open9 ? 'auto' : '0')};
+  opacity: ${({ open9 }) => (open9 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open9 }) => (open9 ? '0.75rem 0rem' : '0')};
-    height: ${({ open9 }) => (open9 ? '5.5rem' : '0')};
+    height: ${({ open9 }) => (open9 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open9 }) => (open9 ? '0.75rem 0rem' : '0')};
-    height: ${({ open9 }) => (open9 ? '2.5rem' : '0')};
+    height: ${({ open9 }) => (open9 ? 'auto' : '0')};
   }
 `;
 
@@ -546,11 +555,12 @@ export const ServiceDescription10 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open10 }) => (open10 ? '1rem 0rem' : '0')};
-  height: ${({ open10 }) => (open10 ? '8.5rem' : '0')};
+  height: ${({ open10 }) => (open10 ? 'auto' : '0')};
+  opacity: ${({ open10 }) => (open10 ? '1' : '0')};
 
   overflow: hidden;
 
@@ -560,13 +570,13 @@ export const ServiceDescription10 = styled.h2`
     font-size: ${typeface.$xs2};
 
     margin: ${({ open10 }) => (open10 ? '0.75rem 0rem' : '0')};
-    height: ${({ open10 }) => (open10 ? '5.5rem' : '0')};
+    height: ${({ open10 }) => (open10 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open10 }) => (open10 ? '0.75rem 0rem' : '0')};
-    height: ${({ open10 }) => (open10 ? '2.5rem' : '0')};
+    height: ${({ open10 }) => (open10 ? 'auto' : '0')};
   }
 `;
 
@@ -575,27 +585,28 @@ export const ServiceDescription11 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open11 }) => (open11 ? '1rem 0rem' : '0')};
-  height: ${({ open11 }) => (open11 ? '8.5rem' : '0')};
+  height: ${({ open11 }) => (open11 ? 'auto' : '0')};
+  opacity: ${({ open11 }) => (open11 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open11 }) => (open11 ? '0.75rem 0rem' : '0')};
-    height: ${({ open11 }) => (open11 ? '5.5rem' : '0')};
+    height: ${({ open11 }) => (open11 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open11 }) => (open11 ? '0.75rem 0rem' : '0')};
-    height: ${({ open11 }) => (open11 ? '2.5rem' : '0')};
+    height: ${({ open11 }) => (open11 ? 'auto' : '0')};
   }
 `;
 
@@ -604,26 +615,27 @@ export const ServiceDescription12 = styled.h2`
   font-weight: ${typeface.$thin};
   color: #000;
 
-  text-align: justify;
-  max-width: 18rem;
+  text-align: left;
+  max-width: 22.5rem;
 
   margin: ${({ open12 }) => (open12 ? '1rem 0rem' : '0')};
-  height: ${({ open12 }) => (open12 ? '8.5rem' : '0')};
+  height: ${({ open12 }) => (open12 ? 'auto' : '0')};
+  opacity: ${({ open12 }) => (open12 ? '1' : '0')};
 
   overflow: hidden;
 
-  transition: all 400ms ease-in-out;
+  transition: all 500ms ease-in-out;
 
   @media (max-width: ${media.laptopL}) {
     font-size: ${typeface.$xs2};
 
     margin: ${({ open12 }) => (open12 ? '0.75rem 0rem' : '0')};
-    height: ${({ open12 }) => (open12 ? '5.5rem' : '0')};
+    height: ${({ open12 }) => (open12 ? 'auto' : '0')};
   }
   @media (max-width: ${media.tablet}) {
     font-size: ${typeface.$xs3};
 
     margin: ${({ open12 }) => (open12 ? '0.75rem 0rem' : '0')};
-    height: ${({ open12 }) => (open12 ? '2.5rem' : '0')};
+    height: ${({ open12 }) => (open12 ? 'auto' : '0')};
   }
 `;
